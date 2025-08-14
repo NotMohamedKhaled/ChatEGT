@@ -22,7 +22,8 @@ Used the API of **openai/gpt-oss-20b** AI Model for generating chatbot responses
 
 ## **Tech Stack**  
 
-- **Frontend:** React, Vite  
+- **Frontend:** React, Vite
+- **AI Model:** openai/gpt-oss-20b  
 - **State:** React Context API  
 - **Styling:** CSS Modules  
 - **Icons:** lucide-react  
