@@ -1,8 +1,42 @@
-# React + Vite
+# **ChatEGT — React Chatbot**  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive chat app built with **React.js** + **Vite**.  
+It supports multiple chats, auto-generated titles, localStorage persistence, **Show Reasoning** mode, and a mobile-friendly UI with an off-canvas sidebar.  
 
-Currently, two official plugins are available:
+Used the API of **openai/gpt-oss-20b** AI Model for generating chatbot responses and coming up with a related title for the chat log.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## **Features**  
+
+- **Multi chat sessions** — Create, select, rename, and delete chat logs.  
+- **AI responses** — Sends conversation context to the API and renders assistant replies.  
+- **Auto title generation** — First user message triggers a concise chat title via API.  
+- **Reasoning toggle** — Optionally show assistant “reasoning” text before replies.  
+- **Local persistence** — Chats, active chat, reasoning mode, and theme saved in localStorage.  
+- **Responsive UI** — Sidebar collapses into a rail at ≤1200px and slides over content when expanded.  
+- **Markdown rendering** — Assistant messages support basic Markdown via react-markdown.  
+- **Theme** — Light/Dark mode.  
+
+---
+
+## **Tech Stack**  
+
+- **Frontend:** React, Vite  
+- **State:** React Context API  
+- **Styling:** CSS Modules  
+- **Icons:** lucide-react  
+- **Markdown:** react-markdown  
+- **Persistence:** localStorage  
+
+---
+
+## **Student Principles Applied**  
+
+- **Single source of truth** — Centralized chat state in ChatContext.  
+- **Separation of concerns** — State logic in context, API orchestration in App.jsx.  
+- **Functional state updates** — Avoid stale closures when updating nested arrays.  
+- **Persistence** — localStorage hydration.  
+- **Responsive design** — Media queries + off-canvas sidebar.  
+- **Accessible interactions** — Keyboard shortcuts and clear input behaviors.  
+- **Progressive enhancement** — Works without reasoning mode, enhances with Markdown.  
