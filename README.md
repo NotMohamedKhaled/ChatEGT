@@ -34,10 +34,11 @@ Used the API of **openai/gpt-oss-20b** AI Model for generating chatbot responses
 
 ## **Student Principles Applied**  
 
+- **Fetching from API** — Fetching from a real AI model API.  
 - **Single source of truth** — Centralized chat state in ChatContext.  
 - **Separation of concerns** — State logic in context, API orchestration in App.jsx.  
 - **Functional state updates** — Avoid stale closures when updating nested arrays.  
 - **Persistence** — localStorage hydration.  
-- **Responsive design** — Media queries + off-canvas sidebar.  
-- **Accessible interactions** — Keyboard shortcuts and clear input behaviors.  
-- **Progressive enhancement** — Works without reasoning mode, enhances with Markdown.  
+- **Handling side-effects** — Real usage and application of useEffect.  
+
+ 
