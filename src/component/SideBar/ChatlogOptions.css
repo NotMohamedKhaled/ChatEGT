@@ -1,0 +1,124 @@
+.options-dialog {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    left: 103%;         /* Position it to the right of the chat-log-item */
+    top: 0;             /* Align with the top */
+    z-index: 10;
+ }
+  .option{
+    padding:  1rem 0.4rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    border: solid 1px var(--border-color) ;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-radius: 5px; 
+
+}
+  .option:hover{
+    background-color: var(--hover-color);
+  }
+  .rename-dialog{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 250px;
+    min-height: 100px;
+    left: 103%;        
+    top: 0;        
+    padding:  0.6rem 0.4rem;
+    background-color: var(--exception-color);  
+    border-radius: 5px; 
+
+  }
+  .rename-dialog button:hover{
+    transform: scale(1.1);
+  }
+
+  .rename-dialog p{
+    font-size: 14px;
+    text-align: center;
+  }
+  .rename-dialog input{
+    border:1px solid var(--border-color) ;
+    border-radius: 8px;
+    padding-left: 8px;
+    outline: none;
+    margin: 0 auto;
+    width: 200px;
+  }
+.buttons{
+    display: flex;
+justify-content: center;
+
+}
+  .new-title-btn{
+    border:none;
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    border-radius: 8px;
+    cursor: pointer;
+    width: 60px;
+  }
+  .new-title-cancel{
+    margin-left: 5px;
+    border: none;
+    background-color: rgb(204, 26, 26);
+    border-radius: 8px;
+
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .delete-dialog{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 250px;
+    min-height: 100px;
+    left: 103%;        
+    top: 0;        
+    padding:  0.6rem 0.4rem;
+    background-color: var(--exception-color);  
+    border-radius: 5px; 
+
+  }
+  .delete-dialog button:hover{
+    transform: scale(1.1);
+  }
+  .delete-dialog p{
+    margin-top: 8px;
+    text-align: center;
+  }
+  .delete-dialog-delete{
+    border: none;
+    background-color: rgb(204, 26, 26);
+    color: white;
+    border-radius: 8px;
+    padding: 0.3rem 0.4rem;
+    width: 55px;
+    cursor: pointer;
+  }
+  .delete-dialog-cancel{
+    margin-left: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  @media(max-width: 480px){
+   
+    .delete-dialog{
+      min-width: 200px;
+    }
+    .rename-dialog{
+      min-width: 100px;
+    }
+    .rename-dialog input{
+      width: 180px;
+    }
+  }

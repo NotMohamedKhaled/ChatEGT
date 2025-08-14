@@ -1,0 +1,28 @@
+
+      :root {
+        /* Light theme colors */
+        --bg-primary: #ffffff;
+        --bg-secondary: #F9F9F9;
+        --text-primary: #000000;
+        --text-secondary: #333333;
+        --border-color: #EDEDED;
+        --accent-color: rgb(27, 160, 27);
+        --hover-color: rgb(184, 192, 192);
+        --exception-color:rgb(184, 192, 192);;
+      }
+      .dark {
+        --bg-primary: #2d2d2d;
+        --bg-secondary: #1a1a1a;
+        --text-primary: #ffffff;
+        --text-secondary: #cccccc;
+        --border-color: #404040;
+        --accent-color: rgb(76, 175, 80);
+        --hover-color: #404040;
+        --exception-color: #1a1a1a;
+      } 
+          body{
+        margin: 0;
+        background-color: var(--bg-primary);
+        color: var(--text-secondary);
+        transition: background-color 0.3s ease, color 0.3s ease;
+        }

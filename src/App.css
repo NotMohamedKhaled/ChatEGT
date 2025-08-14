@@ -1,0 +1,14 @@
+  p{
+    margin: 0;
+  }
+  .app {
+    display: flex;
+    height: 100vh;
+    background-color: var(--bg-primary);
+    transition: background-color 0.3s ease;
+  }
+  
+*{
+  box-sizing: border-box;
+}
+  
